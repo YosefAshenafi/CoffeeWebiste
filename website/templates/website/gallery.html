@@ -1,0 +1,68 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Page Banner Section Start -->
+    <div class="page-banner-section section">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Page Banner Section End -->
+    <!-- Gallery Section Start -->
+    <div class="h1-gallery-section section section-padding pt-0">
+        <div class="container">
+            <div class="section-title section-title-center">
+                <p class="title pt-5">What Happens Here</p>
+                <h2 class="sub-title">TUKKE SHOP GALLERY</h2>
+
+            </div>
+
+            <div class="mfp-zoom-gallery row row-cols-lg-3 row-cols-sm-2 row-cols-1 mb-n6">
+
+                <div class="col mb-6">
+                    <a href="{% static 'website/images/gallery/big/gallery-1.png' %}" class="gallery-item">
+                        <img loading="lazy" src="{% static 'website/images/gallery/gallery-1.jpg' %}" alt="gallery 1" width="348" height="418">
+                        <div class="gallery-item-overlay"><i class="sli-size-fullscreen"></i></div>
+                    </a>
+                </div>
+                <div class="col mb-6">
+                    <a href="{% static 'website/images/gallery/big/gallery-2.png' %}" class="gallery-item">
+                        <img loading="lazy" src="{% static 'website/images/gallery/gallery-2.jpg' %}" alt="gallery 2" width="348" height="418">
+                        <div class="gallery-item-overlay"><i class="sli-size-fullscreen"></i></div>
+                    </a>
+                </div>
+                <div class="col mb-6">
+                    <a href="{% static 'website/images/gallery/big/gallery-3.png' %}" class="gallery-item">
+                        <img loading="lazy" src="{% static 'website/images/gallery/gallery-3.jpg' %}" alt="gallery 3" width="348" height="418">
+                        <div class="gallery-item-overlay"><i class="sli-size-fullscreen"></i></div>
+                    </a>
+                </div>
+                <div class="col mb-6">
+                    <a href="{% static 'website/images/gallery/big/gallery-4.png' %}" class="gallery-item">
+                        <img loading="lazy" src="{% static 'website/images/gallery/gallery-4.jpg' %}" alt="gallery 4" width="348" height="418">
+                        <div class="gallery-item-overlay"><i class="sli-size-fullscreen"></i></div>
+                    </a>
+                </div>
+                <div class="col mb-6">
+                    <a href="{% static 'website/images/gallery/big/gallery-5.png' %}" class="gallery-item">
+                        <img loading="lazy" src="{% static 'website/images/gallery/gallery-5.jpg' %}" alt="gallery 5" width="348" height="418">
+                        <div class="gallery-item-overlay"><i class="sli-size-fullscreen"></i></div>
+                    </a>
+                </div>
+                <div class="col mb-6">
+                    <a href="{% static 'website/images/gallery/big/gallery-6.png' %}" class="gallery-item">
+                        <img loading="lazy" src="{% static 'website/images/gallery/gallery-6.jpg' %}" alt="gallery 6" width="348" height="418">
+                        <div class="gallery-item-overlay"><i class="sli-size-fullscreen"></i></div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Gallery Section End -->
+{% endblock %}

@@ -1,0 +1,139 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Page Banner Section Start -->
+    <div class="page-banner-section section">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Product Details</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Page Banner Section End -->
+
+    <!-- Product Details Section Start -->
+    <div class="product-details-section section section-padding">
+        <div class="container">
+
+            <!-- Single Product Top Area Start -->
+            <div class="row row-cols-md-2 row-cols-1 mb-n6">
+
+                <!-- Product Image Start -->
+                <div class="col mb-6">
+                    <div class="single-product-image">
+
+                        <!-- Product Image Slider Start -->
+                        <div class="product-image-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide image-zoom"><img src="{% static 'website/images/products/single/single-product-1.png' %}" alt="Signature Blend Roast Coffee"></div>
+                                <div class="swiper-slide image-zoom"><img src="{% static 'website/images/products/single/single-product-2.png' %}" alt="Signature Blend Roast Coffee"></div>
+                                <div class="swiper-slide image-zoom"><img src="{% static 'website/images/products/single/single-product-3.png' %}" alt="Signature Blend Roast Coffee"></div>
+                                <div class="swiper-slide image-zoom"><img src="{% static 'website/images/products/single/single-product-4.png' %}" alt="Signature Blend Roast Coffee"></div>
+                            </div>
+                            <div class="swiper-pagination d-none"></div>
+                            <div class="swiper-button-prev d-none"></div>
+                            <div class="swiper-button-next d-none"></div>
+                        </div>
+                        <!-- Product Image Slider End -->
+
+                        <!-- Product Thumbnail Carousel Start -->
+                        <div class="product-thumb-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="{% static 'website/images/products/single/single-product-thumb-1.jpg' %}" alt="Signature Blend Roast Coffee"></div>
+                                <div class="swiper-slide"><img src="{% static 'website/images/products/single/single-product-thumb-2.jpg' %}" alt="Signature Blend Roast Coffee"></div>
+                                <div class="swiper-slide"><img src="{% static 'website/images/products/single/single-product-thumb-3.jpg' %}" alt="Signature Blend Roast Coffee"></div>
+                                <div class="swiper-slide"><img src="{% static 'website/images/products/single/single-product-thumb-4.jpg' %}" alt="Signature Blend Roast Coffee"></div>
+                            </div>
+                            <div class="swiper-pagination d-none"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <!-- Product Thumbnail Carousel End -->
+
+                    </div>
+                </div>
+                <!-- Product Image End -->
+
+                <!-- Product Content Start -->
+                <div class="col mb-6">
+                    <div class="single-product-content">
+                        <h1 class="single-product-title">Signature Blend Roast Coffee</h1>
+                        <ul class="single-product-meta">
+                            <li><span class="label">SKU :</span> <span class="value">1110</span></li>
+                            <li><span class="label">Vendor :</span> <span class="value">Vendor 3</span></li>
+                            <li><span class="label">Type :</span> <span class="value">Type 3</span></li>
+                        </ul>
+                        <div class="single-product-text">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                        </div>
+                        <ul class="single-product-variations">
+                            <li><span class="label">Size :</span>
+                                <div class="value">
+                                    <div class="single-product-variation-size-wrap">
+                                        <div class="single-product-variation-size-item"><input type="radio" name="size" id="size-s" checked><label for="size-s">s</label></div>
+                                        <div class="single-product-variation-size-item"><input type="radio" name="size" id="size-m"><label for="size-m">m</label></div>
+                                        <div class="single-product-variation-size-item"><input type="radio" name="size" id="size-l"><label for="size-l">l</label></div>
+                                        <div class="single-product-variation-size-item"><input type="radio" name="size" id="size-xl"><label for="size-xl">xl</label></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span class="label">Color :</span>
+                                <div class="value">
+                                    <div class="single-product-variation-color-wrap">
+                                        <div class="single-product-variation-color-item"><input type="radio" name="color" id="color-purple" checked><label for="color-purple" style="background-color: purple;">purple</label></div>
+                                        <div class="single-product-variation-color-item"><input type="radio" name="color" id="color-violet"><label for="color-violet" style="background-color: violet;">violet</label></div>
+                                        <div class="single-product-variation-color-item"><input type="radio" name="color" id="color-black"><label for="color-black" style="background-color: black;">black</label></div>
+                                        <div class="single-product-variation-color-item"><input type="radio" name="color" id="color-pink"><label for="color-pink" style="background-color: pink;">pink</label></div>
+                                        <div class="single-product-variation-color-item"><input type="radio" name="color" id="color-orange"><label for="color-orange" style="background-color: orange;">orange</label></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span class="label">Material :</span>
+                                <div class="value">
+                                    <div class="single-product-variation-material-wrap">
+                                        <div class="single-product-variation-material-item"><input type="radio" name="material" id="material-metal" checked><label for="material-metal">metal</label></div>
+                                        <div class="single-product-variation-material-item"><input type="radio" name="material" id="material-resin"><label for="material-resin">resin</label></div>
+                                        <div class="single-product-variation-material-item"><input type="radio" name="material" id="material-leather"><label for="material-leather">leather</label></div>
+                                        <div class="single-product-variation-material-item"><input type="radio" name="material" id="material-slag"><label for="material-slag">slag</label></div>
+                                        <div class="single-product-variation-material-item"><input type="radio" name="material" id="material-fiber"><label for="material-fiber">fiber</label></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        
+                        <ul class="single-product-meta">
+                            <li><span class="label">Categories :</span> <span class="value links">
+                                <a href="#">Coffee</a>
+                                <a href="#">Deal Collection</a>
+                                <a href="#">Featured Products</a>
+                                <a href="#">Green coffee</a>
+                                <a href="#">Italian</a>
+                            </span></li>
+                            <li><span class="label">Tags :</span> <span class="value links">
+                                <a href="#">black</a>
+                                <a href="#">fiber</a>
+                                <a href="#">leather</a>
+                            </span></li>
+                        </ul>
+                        <div class="single-product-buy-now" id="single-product-buy-now">
+                            <a href="#" class="btn btn-dark btn-primary-hover rounded-0"><i class="sli-magnet"></i>Get Quote</a>
+                        </div>
+                        <div class="contact-form" id="contact-form">
+                            <div class="col"><input class="form-control form-field mb-2" name="name" type="text" placeholder="Name"></div>
+                            <div class="col"><input class="form-control form-field mb-2" name="email" type="email" placeholder="Email"></div>
+                            <div class="col"><textarea class="form-control form-field mb-2" name="message" placeholder="Detail"></textarea></div>
+                            <div class="col"><button class="btn btn-dark btn-primary-hover rounded-0 w-100" type="submit"><i class="sli-cursor"></i> Send</button></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Content End -->
+
+            </div>
+            <!-- Single Product Top Area End -->
+        </div>
+    </div>
+    <!-- Product Details Section End -->
+{% endblock %}
