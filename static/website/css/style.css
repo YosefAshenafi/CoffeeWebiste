@@ -1171,7 +1171,9 @@ hr {
 .swiper-slide {
   height: auto;
 }
-
+.swiper-teams {
+  width: 400px !important;
+}
 /* Swiper Navigation */
 .swiper-button-prev,
 .swiper-button-next {
@@ -2890,7 +2892,6 @@ hr {
 .single-product-badge-new {
   background-color: #C7A17A;
 }
-
 /* Single Product Image Slider */
 .product-image-slider,
 .product-image-slider-vertical,

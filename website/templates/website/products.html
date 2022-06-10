@@ -16,155 +16,88 @@
     <!-- Product Section Start -->
     <div class="shop-product-section section section-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-md-9">
+            <div class="row mb-n8">
+
+                <div class="col-lg-9 col-12 mb-8">
+
                     <!-- Product Tab Start -->
                     <div class="tab-content" id="shopProductTabContent">
-                        <div class="tab-pane fade show active" id="product-grid">
-                            <h1>Products For Sell </h1>
-                            <hr>
-                            <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1 mb-n6">
+                        <div class="tab-pane fade" id="product-grid">
+                            <div class="row row-cols-xl-3 row-cols-sm-2 row-cols-1 mb-n6">
 
                                 <div class="col mb-6">
                                     <div class="product">
                                         <div class="product-thumb">
-                                            <a href="{% url 'product_details' %}" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-1.png' %}" alt="House Coffee Original" width="268" height="306"></a>
+                                            <a href="product-details.html" class="product-image"><img loading="lazy" src="website/images/products/product-9.png" alt="Supreme Dark Roast Coffee" width="268" height="306"></a>
                                         </div>
                                         <div class="product-content">
 
-                                            <h5 class="product-title"><a href="{% url 'product_details' %}">House Coffee Original</a></h5>
-                                            <div class="product-price">#10121</div>
+                                            <h5 class="product-title"><a href="product-details.html">Supreme Dark Roast Coffee</a></h5>
+                                            <div class="product-price"><del>$75.00</del>$55.00</div>
                                             <div class="product-rating">
-                                                <span class="product-rating-bg"><span class="product-rating-active" style="width: 90%;"></span></span>
+                                                <span class="product-rating-bg"><span class="product-rating-active" style="width: 65%;"></span></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col mb-6">
-                                    <div class="product">
-                                        <div class="product-thumb">
-                                            <a href="{% url 'product_details' %}" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-2.png' %}" alt="Medium Roast Ground Coffee" width="268" height="306"></a>
-                                        </div>
-                                        <div class="product-content">
-
-                                            <h5 class="product-title"><a href="{% url 'product_details' %}">Medium Roast Ground Coffee</a></h5>
-                                            <div class="product-price">#10122</div>
-                                            <div class="product-rating">
-                                                <span class="product-rating-bg"><span class="product-rating-active" style="width: 80%;"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col mb-6">
-                                    <div class="product">
-                                        <div class="product-thumb">
-                                            <a href="{% url 'product_details' %}" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-3.png' %}" alt="Premium Roast Coffee" width="268" height="306"></a>
-                                        </div>
-                                        <div class="product-content">
-
-                                            <h5 class="product-title"><a href="{% url 'product_details' %}">Premium Roast Coffee</a></h5>
-                                            <div class="product-price">#10123</div>
-                                            <div class="product-rating">
-                                                <span class="product-rating-bg"><span class="product-rating-active" style="width: 100%;"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col mb-6">
-                                    <div class="product">
-                                        <div class="product-thumb">
-                                            <a href="{% url 'product_details' %}" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-4.png' %}" alt="Signature Blend Roast Coffee" width="268" height="306"></a>
-                                        </div>
-                                        <div class="product-content">
-
-                                            <h5 class="product-title"><a href="{% url 'product_details' %}">Signature Blend Roast Coffee</a></h5>
-                                            <div class="product-price">#10124</div>
-                                            <div class="product-rating">
-                                                <span class="product-rating-bg"><span class="product-rating-active" style="width: 75%;"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
-                        <div class="tab-pane fade show active" id="product-grid">
-                            <h1 class="mt-5">Products For Export </h1>
-                            <hr>
-                            <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1 mb-n6">
+                        <div class="tab-pane fade show active" id="product-list">
+                            <div class="row row-cols-md-1 row-cols-sm-2 row-cols-1 mb-n6">
 
                                 <div class="col mb-6">
-                                    <div class="product">
+                                    <div class="product product-list">
                                         <div class="product-thumb">
-                                            <a href="{% url 'product_details' %}" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-1.png' %}" alt="House Coffee Original" width="268" height="306"></a>
-                                        </div>
-                                        <div class="product-content">
+                                            <a href="#" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-1.png' %}" alt="Premium Roast Coffee" width="268" height="306"></a>
 
-                                            <h5 class="product-title"><a href="{% url 'product_details' %}">House Coffee Original</a></h5>
-                                            <div class="product-price">#10121</div>
-                                            <div class="product-rating">
-                                                <span class="product-rating-bg"><span class="product-rating-active" style="width: 90%;"></span></span>
+                                            <div class="product-action">
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="col mb-6">
-                                    <div class="product">
-                                        <div class="product-thumb">
-                                            <a href="{% url 'product_details' %}" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-2.png' %}" alt="Medium Roast Ground Coffee" width="268" height="306"></a>
+
                                         </div>
                                         <div class="product-content">
 
-                                            <h5 class="product-title"><a href="{% url 'product_details' %}">Medium Roast Ground Coffee</a></h5>
-                                            <div class="product-price">#10122</div>
-                                            <div class="product-rating">
-                                                <span class="product-rating-bg"><span class="product-rating-active" style="width: 80%;"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col mb-6">
-                                    <div class="product">
-                                        <div class="product-thumb">
-                                            <a href="{% url 'product_details' %}" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-3.png' %}" alt="Premium Roast Coffee" width="268" height="306"></a>
-                                        </div>
-                                        <div class="product-content">
-
-                                            <h5 class="product-title"><a href="{% url 'product_details' %}">Premium Roast Coffee</a></h5>
-                                            <div class="product-price">#10123</div>
+                                            <h5 class="product-title"><a href="#">Yirgacheffe Coffee</a></h5>
+                                            <p class="product-excerpt">are spicy and fragrant, and are frequently reviewed and rated as some of the highest quality Arabica coffees in the world. Grown between 1700-2200masl. Flavor: Sweet and Aroma</p>
+                                            <div class="product-price"><i>quote for the price</i></div>
                                             <div class="product-rating">
                                                 <span class="product-rating-bg"><span class="product-rating-active" style="width: 100%;"></span></span>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col mb-6">
-                                    <div class="product">
-                                        <div class="product-thumb">
-                                            <a href="{% url 'product_details' %}" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-4.png' %}" alt="Signature Blend Roast Coffee" width="268" height="306"></a>
-                                        </div>
-                                        <div class="product-content">
-
-                                            <h5 class="product-title"><a href="{% url 'product_details' %}">Signature Blend Roast Coffee</a></h5>
-                                            <div class="product-price">#10124</div>
-                                            <div class="product-rating">
-                                                <span class="product-rating-bg"><span class="product-rating-active" style="width: 75%;"></span></span>
+                                            <div class="product-action position-static">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="col mb-6">
+                                    <div class="product product-list">
+                                        <div class="product-thumb">
+                                            <a href="#" class="product-image"><img loading="lazy" src="{% static 'website/images/products/product-2.png' %}" alt="Supreme Dark Roast Coffee" width="268" height="306"></a>
+
+                                            <div class="product-action">
+                                            </div>
+
+                                        </div>
+                                        <div class="product-content">
+
+                                            <h5 class="product-title"><a href="#">Sidama Coffee</a></h5>
+                                            <p class="product-excerpt">Orgin from Sidama regional state in Ethiopia. Its grown between 1700-1950masl. Chocolate ganache and blackberries are the flavor notes of Sidama coffee</p>
+                                            <div class="product-price"><i>quote for the price</i></div>
+                                            <div class="product-rating">
+                                                <span class="product-rating-bg"><span class="product-rating-active" style="width: 100%;"></span></span>
+                                            </div>
+                                            <div class="product-action position-static">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Product Tab End -->
+
                 </div>
+
                 <div class="col-md-3 contact-form">
                     <h1>Get Quote </h1>
                     <div class="col"><input class="form-control form-field mb-2" name="name" type="text" placeholder="Name"></div>
@@ -173,8 +106,10 @@
                     <div class="col"><textarea class="form-control form-field mb-2" name="message" placeholder="Detail"></textarea></div>
                     <div class="col"><button class="btn btn-dark btn-primary-hover rounded-0 w-100" type="submit"><i class="sli-cursor"></i> Send</button></div>
                 </div>
+
             </div>
         </div>
     </div>
+
     <!-- Product Section End -->
 {% endblock %}

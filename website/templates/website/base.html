@@ -11,8 +11,6 @@
     <meta name="description" content="TUKKE - Coffee Shop Website Template">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'website/images/favicon.png' %}">
     <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
 
     <!-- Fonts CSS -->
@@ -138,6 +136,15 @@
                     <a href="#"><i class="sli-social-pinterest"></i></a>
                 </div>
                 <!-- Action End -->
+                <!-- Action Start -->
+                <div class="col-auto">
+                    <div class="header-action">
+                        <div class="header-action-item d-lg-none">
+                            <button class="header-action-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-header"><i class="sli-menu"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Action End -->
             </div>
         </div>
     </div>
@@ -153,131 +160,27 @@
             </div>
         </div>
     </div>
-    <div class="offcanvas offcanvas-end" id="offcanvas-cart">
-        <div class="offcanvas-header">
-            <h5>Shoping Cart</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body d-flex flex-column">
-            <div class="header-cart-body">
-                <div class="header-cart-products">
-                    <div class="header-cart-product">
-                        <div class="header-cart-product-thumb">
-                            <a href="{% static '' %}" class="header-cart-product-image"><img src="{% static 'website/images/products/cart/product-1.jpg' %}" alt="House Coffee Original" width="90" height="103"></a>
-                            <button class="header-cart-product-remove"><i class="sli-close"></i></button>
-                        </div>
-                        <div class="header-cart-product-content">
-                            <h5 class="header-cart-product-title"><a href="{% static '' %}">House Coffee Original</a></h5>
-                            <span class="header-cart-product-quantity">1 x $110.00</span>
-                        </div>
-                    </div>
-                    <div class="header-cart-product">
-                        <div class="header-cart-product-thumb">
-                            <a href="{% static '' %}" class="header-cart-product-image"><img src="{% static 'website/images/products/cart/product-2.jpg' %}" alt="Medium Roast Ground Coffee" width="90" height="103"></a>
-                            <button class="header-cart-product-remove"><i class="sli-close"></i></button>
-                        </div>
-                        <div class="header-cart-product-content">
-                            <h5 class="header-cart-product-title"><a href="{% static '' %}">Medium Roast Ground Coffee</a></h5>
-                            <span class="header-cart-product-quantity">1 x $19.00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-cart-footer">
-                <h4 class="header-cart-total">Total: <span>$129.00</span></h4>
-                <div class="header-cart-buttons">
-                    <a href="{% static '' %}" class="btn btn-outline-dark btn-primary-hover">CHECKOUT</a>
-                    <a href="{% static '' %}" class="btn btn-outline-dark btn-primary-hover">VIEW CART</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="offcanvas offcanvas-end" id="offcanvas-header">
         <div class="offcanvas-header">
-            <h5>Mobile Menu</h5>
+            <h5>Menu</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <nav class="mobile-menu">
                 <ul>
                     <li>
-                        <a href="{% static '' %}">Home</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="{% static '' %}">Home One</a></li>
-                            <li><a href="{% static '' %}">Home Two</a></li>
-                            <li><a href="{% static '' %}">Home Three</a></li>
-                            <li><a href="{% static '' %}">Home Four</a></li>
-                        </ul>
+                        <a href="{% url 'home' %}">Home</a>
                     </li>
                     <li>
-                        <a href="{% static '' %}">Shop</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li>
-                                <a href="{% static '' %}">Shop Grid Layout</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="{% static '' %}">Shop Grid Left Sidebar</a></li>
-                                    <li><a href="{% static '' %}">Shop Grid Right Sidebar</a></li>
-                                    <li><a href="{% static '' %}">Shop Grid 3 Column (no sidebar)</a></li>
-                                    <li><a href="{% static '' %}">Shop Grid 4 Column (no sidebar)</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="{% static '' %}">Shop List Layout</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="{% static '' %}">Shop List Left Sidebar</a></li>
-                                    <li><a href="{% static '' %}">Shop List Right Sidebar</a></li>
-                                    <li><a href="{% static '' %}">Shop List (no sidebar)</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="{% static '' %}">Product Pages</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="{% static '' %}">Product Details</a></li>
-                                    <li><a href="{% static '' %}">Product Details Sticky Content</a></li>
-                                    <li><a href="{% static '' %}">Product Details Right Thumbnail</a></li>
-                                    <li><a href="{% static '' %}">Product Details Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="{% static '' %}">Others</a>
-                                <button class="mobile-sub-menu-toggle"></button>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="{% static '' %}">Shopping Cart</a></li>
-                                    <li><a href="{% static '' %}">Checkout</a></li>
-                                    <li><a href="{% static '' %}">Wishlist</a></li>
-                                    <li><a href="{% static '' %}">My Account</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <a href="{% url 'about' %}">About Us</a>
                     </li>
                     <li>
-                        <a href="{% static '' %}">Pages</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="{% static '' %}">About Us</a></li>
-                            <li><a href="{% static '' %}">Contact Us</a></li>
-                            <li><a href="{% static '' %}">Login</a></li>
-                            <li><a href="{% static '' %}">Register</a></li>
-                            <li><a href="{% static '' %}">FAQ</a></li>
-                        </ul>
+                        <a href="{% url 'products' %}">Products</a>
                     </li>
                     <li>
-                        <a href="{% static '' %}">Blog</a>
-                        <button class="mobile-sub-menu-toggle"></button>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="{% static '' %}">Blog Left Sidebar</a></li>
-                            <li><a href="{% static '' %}">Blog Right Sidebar</a></li>
-                            <li><a href="{% static '' %}">Blog No Sidebar</a></li>
-                            <li><a href="{% static '' %}">Blog Details Left Sidebar</a></li>
-                            <li><a href="{% static '' %}">Blog Details Right Sidebar</a></li>
-                        </ul>
+                        <a href="{% url 'gallery' %}">Gallery</a>
                     </li>
-                    <li><a href="{% static '' %}">Contact Us</a></li>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -336,11 +239,11 @@
                     <div class="col-lg-4 col-sm-6 col-12 mb-8">
                         <div class="footer-widget footer-widget-dark">
                             <h5 class="footer-widget-title">About Info</h5>
-                            <p>This is the perfect place to find a nice and cozy spot to sip some. You'll find the Java Jungle.</p>
+                            <p>Our product found at every Super market and in our café around Shola market on Solast building first flour.</p>
                             <ul class="footer-widget-list-icon">
-                                <li><i class="sli-location-pin"></i>Addresss: 123 Pall Mall, London England</li>
-                                <li><i class="sli-envelope"></i>Email: hello@example.com</li>
-                                <li><i class="sli-phone"></i>Phone: (012) 345 6789</li>
+                                <li><i class="sli-location-pin"></i>Addresss: Kenenisa avenue, Shola market</li>
+                                <li><i class="sli-envelope"></i>Email: info@tukkecoffee.com</li>
+                                <li><i class="sli-phone"></i>Phone: (+251) 912 633555</li>
                             </ul>
                         </div>
                     </div>
@@ -359,7 +262,7 @@
 
                     <!-- Footer Widget Start -->
                     <div class="col-md-auto col-12 mb-2">
-                        <p class="footer-copyright footer-copyright-dark text-center">Copyright <b class="text-primary">TUKKE</b> &copy;2022</p>
+                        <p class="footer-copyright footer-copyright-dark text-center">Copyright <b class="text-primary">TUKKE</b> &copy;{% now 'Y' %}</p>
                     </div>
                     <!-- Footer Widget End -->
 
