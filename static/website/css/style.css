@@ -1174,6 +1174,14 @@ hr {
 .swiper-teams {
   width: 400px !important;
 }
+
+@media only screen and (max-width: 767px) 
+{
+  .swiper-teams {
+    width: 100% !important;
+  }
+}
+
 /* Swiper Navigation */
 .swiper-button-prev,
 .swiper-button-next {
@@ -2079,6 +2087,27 @@ hr {
   opacity: 1;
 }
 
+.about-hero {
+    position: relative; 
+    height: 100vh;
+
+}
+
+.about-hero::before {    
+      content: "";
+      background-image: url('../images/others/about-us.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.35;
+}
+#google_translate_element {
+  float: right;
+}
 /*-----------------------------------
     - Title CSS
 -----------------------------------*/
@@ -2619,6 +2648,7 @@ hr {
   .product-list {
     flex-direction: column;
     gap: 0;
+    display: block !important;
   }
 }
 .product-list .product-thumb {

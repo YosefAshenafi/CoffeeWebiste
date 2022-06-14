@@ -7,6 +7,34 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>TUKKE - Coffee Website</title>
+    <!-- Start of Async Drift Code -->
+    <script>
+    "use strict";
+
+    !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+        return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+        };
+        }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+        }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+        };
+    }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('eshyvgahhpa6');
+    </script>
+    <!-- End of Async Drift Code -->
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="TUKKE - Coffee Shop Website Template">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -88,6 +116,7 @@
 </head>
 
 <body>
+    <div id="google_translate_element"></div>
 
     <div class="header sticky-header section">
         <div class="container-fluid">
@@ -262,7 +291,7 @@
 
                     <!-- Footer Widget Start -->
                     <div class="col-md-auto col-12 mb-2">
-                        <p class="footer-copyright footer-copyright-dark text-center">Copyright <b class="text-primary">TUKKE</b> &copy;{% now 'Y' %}</p>
+                        <p class="footer-copyright footer-copyright-dark text-center">Copyright <b class="text-primary">TUKKECOFFEE</b> &copy;{% now 'Y' %}</p>
                     </div>
                     <!-- Footer Widget End -->
 
@@ -422,7 +451,6 @@
     </div>
 
     <button class="scroll-to-top"><i class="sli-arrow-up"></i></button>
-
     <!-- JS Vendor, Plugins & Activation Script Files -->
 
     <!-- Vendors JS -->
@@ -452,7 +480,12 @@
             })
         });
     </script>
-    <script src="//code.tidio.co/ljpkevcekijtcgdfbh7jqlobt75cyv0u.js" async></script>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 </body>
 
 
