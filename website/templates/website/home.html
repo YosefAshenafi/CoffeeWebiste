@@ -176,7 +176,7 @@
             <div class="row row-cols-md-2 row-cols-1 mb-n8">
 
                 <div class="col-lg-7 col mb-8">
-                    <a href="https://goo.gl/maps/x2xEe1fRmxokzGij8" target="_blank" class="map-link">
+                    <a href="https://goo.gl/maps/s85FtN9yCYbumqVP9" target="_blank" class="map-link">
                         <img class="map-image" src="{% static 'website/images/others/map.png'%}" style="border:0; width: 100%; min-height: 400px; height: 100%;"/>
                         <div class="map-middle">
                             <div class="map-text">find tukkecoffee on map</div>
@@ -188,7 +188,7 @@
                     <div class="reservation-form">
                         <div class="block-title">
                             <p class="title">#Reservation</p>
-                            <h2 class="sub-title">BOOK A TABLE</h2>
+                            <h2 class="sub-title">BOOK AN APPOINTMENT</h2>
                         </div>
                         <form action="#">
                             <div class="input-field"><input class="form-field" type="email" placeholder="Your Email"></div>
@@ -196,7 +196,7 @@
                             <div class="input-field"><input class="form-field" type="date" value="2024-01-01"></div>
                             <div class="input-field"><input class="form-field" type="time" value="13:00"></div>
                             <div class="input-field"><textarea class="form-field" placeholder="Your Message"></textarea></div>
-                            <div class="input-field"><input class="btn btn-dark btn-primary-hover rounded-0 w-100" type="submit" value="Book A Table"></div>
+                            <div class="input-field"><input class="btn btn-dark btn-primary-hover rounded-0 w-100" type="submit" value="Book An Appointment"></div>
                         </form>
                     </div>
                 </div>
@@ -205,5 +205,56 @@
         </div>
     </div>
     <!-- Reservation Section End -->
+        <!-- Coffee Menu Section Start -->
+    <div class="h1-coffee-menu-section  section section-padding">
+        <div class="container">
+            <div class="section-title section-title-center">
+                <p class="title">-</p>
+                <h2 class="sub-title">OUR SERVICES</h2>
 
+            </div>
+            <div class="row row-cols-lg-2 row-cols-1 mb-n6">
+                <div class="col mb-6">
+                    <div class="coffee-menu">
+                        <a href="product-details.html" class="coffee-menu-thumb"><img loading="lazy" src="{% static 'website/images/coffee-menu/coffee-6.png' %}" alt="Grilled Cheese Sandwich" width="85" height="85"></a>
+                        <div class="coffee-menu-content">
+                            <h3 class="coffee-menu-title"><a href="product-details.html">Cofe</a></h3>
+                            <p>All things related to café services</p>
+                            <ul>
+                                <li>
+                                Drinks /Coffee
+                                </li>
+                                <li>
+                                Cakes
+                                </li>
+                                <li>
+                                Foods
+                                </li>
+                                <li>
+                                Sweetes
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="coffee-menu-price">01</span>
+                    </div>
+                </div>
+                <div class="col mb-6">
+                    <div class="coffee-menu">
+                        <a href="product-details.html" class="coffee-menu-thumb"><img loading="lazy" src="{% static 'website/images/coffee-menu/coffee-2.png' %}" alt="Grilled Cheese Sandwich" width="85" height="85"></a>
+                        <div class="coffee-menu-content">
+                            <h3 class="coffee-menu-title"><a href="product-details.html">Coffee sales </a></h3>
+                            <p>Roasted yirgacheffe</p>
+                            <p>Ground yirgacheffe</p>
+                            <p>Roasted sidama</p>
+                            <p>Ground sidama</p>
+                        </div>
+                        <span class="coffee-menu-price">02</span>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- Coffee Menu Section End -->
 {% endblock %}
